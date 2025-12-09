@@ -26,7 +26,7 @@ export default {
         description: 'API proxy for LRCLIB to avoid CORS issues',
         frontend: 'https://htmltoolkit.github.io/LRCLibTest/',
         endpoints: [
-          'GET /api/get? track_name=...&artist_name=...&album_name=...&duration=...',
+          'GET /api/get?track_name=...&artist_name=...&album_name=...&duration=...',
           'GET /api/get-cached?track_name=...&artist_name=...&album_name=...&duration=...',
           'GET /api/get/{id}',
           'GET /api/search?q=...&track_name=...&artist_name=...&album_name=...',
@@ -79,7 +79,7 @@ async function handleApiProxy(request, url) {
   const proxyRequest = new Request(targetUrl, {
     method: request.method,
     headers:  headers,
-    body: request.method !== 'GET' && request.method !== 'HEAD' ? request.body : undefined,
+    body: request.method !== 'GET' && request.method !== 'HEAD' ?request.body : undefined,
   });
 
   try {

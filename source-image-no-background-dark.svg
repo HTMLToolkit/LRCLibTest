@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <defs>
+        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#071637" />
+            <stop offset="55%" stop-color="#123a73" />
+            <stop offset="100%" stop-color="#1d6dff" />
+        </linearGradient>
+        <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#6ee6ff" />
+            <stop offset="100%" stop-color="#c9e6ff" />
+        </linearGradient>
+        <linearGradient id="noteGradient" x1="30%" y1="0%" x2="90%" y2="100%">
+            <stop offset="0%" stop-color="#9ac9ff" />
+            <stop offset="100%" stop-color="#ffffff" />
+        </linearGradient>
+    </defs>
+
+    <g stroke-linecap="round" stroke-linejoin="round">
+
+        <!-- Stylized lyrics "L" in bottom-left -->
+        <g transform="translate(3,7.6)" stroke-width="1.5" stroke="url(#bgGradient)">
+            <path d="M1 1v10c0 0.8.6 1.5 1.5 1.5h5" />
+            <path d="M1 4h3" stroke-width="1" opacity="0.6" />
+        </g>
+
+        <g transform="translate(10, 3)" stroke-width="1.6" stroke="url(#bgGradient)">
+            <path d="M4.5 12V2l5.5-0.8v9.5" />
+            <circle cx="2.9" cy="12.5" r="1.6" fill="none" />
+            <circle cx="8.4" cy="10.8" r="1.6" fill="none" />
+        </g>
+    </g>
+</svg>

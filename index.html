@@ -9,26 +9,41 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
   <script>eruda.init()</script>
-  <script type="module" crossorigin src="./assets/index-BvsfHFs6.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-mrnge4Ap.css">
-<link rel="manifest" href="./manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="./registerSW.js"></script></head>
+  <script type="module" crossorigin src="./assets/index-DD7Yz1LG.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Brf62PUy.css">
+<link rel="manifest" href="./manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="./registerSW.js"></script>
+<meta name="theme-color" content="#00bfff">
+<link rel="icon" href="./favicon.ico" sizes="48x48">
+<link rel="icon" href="./source-image.svg" sizes="any" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./apple-touch-icon-180x180.png"></head>
 <body>
   <div class="container">
     <header>
       <div class="logo">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M9 18V5l12-2v13"></path>
-          <circle cx="6" cy="18" r="3"></circle>
-          <circle cx="18" cy="16" r="3"></circle>
-        </svg>
+        <img
+          id="logo-img"
+          src="./source-image-no-background-light.svg"
+          data-logo-light="./source-image-no-background-light.svg"
+          data-logo-dark="./source-image-no-background-dark.svg"
+          alt="LRCGetter Logo"
+          width="32"
+          height="32"
+        >
         <span>LRCGetter</span>
       </div>
-      <nav>
-        <a href="#" class="nav-link active" data-view="search">Search</a>
-        <a href="#" class="nav-link" data-view="get">Get</a>
-        <a href="#" class="nav-link" data-view="publish">Publish</a>
-        <a href="https://lrclib.net/docs" target="_blank" class="nav-link">Docs</a>
-      </nav>
+      <div class="header-controls">
+        <nav>
+          <a href="#" class="nav-link active" data-view="search">Search</a>
+          <a href="#" class="nav-link" data-view="get">Get</a>
+          <a href="#" class="nav-link" data-view="publish">Publish</a>
+          <a href="https://lrclib.net/docs" target="_blank" class="nav-link">Docs</a>
+        </nav>
+        <div class="theme-toggle" role="group" aria-label="Color theme">
+          <button type="button" class="theme-btn" data-theme-mode="dark">Dark</button>
+          <button type="button" class="theme-btn" data-theme-mode="light">Light</button>
+          <button type="button" class="theme-btn" data-theme-mode="auto">Auto</button>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -163,7 +178,7 @@
           <div class="challenge-section">
             <div class="challenge-header">
               <h3>Proof of Work Challenge</h3>
-              <p class="muted">Required to prevent spam.  Click to request and solve automatically.</p>
+              <p class="muted">Required to prevent spam.  Click to request and solve automatically. (This will take a while)</p>
             </div>
             <div class="challenge-controls">
               <button type="button" id="btn-challenge" class="btn btn-secondary">Request Challenge</button>
@@ -186,7 +201,7 @@
     </main>
 
     <footer>
-      <p>Alternative frontend for <a href="https://lrclib.net" target="_blank">LRCLIB</a>. Free lyrics database</p>
+      <p>Alternative frontend for <a href="https://lrclib.net" target="_blank">LRCLIB</a>, the free lyrics database.</p>
     </footer>
   </div>
 
